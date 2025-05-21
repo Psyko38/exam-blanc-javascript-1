@@ -17,8 +17,8 @@ function inverserMots(txt) {
 	for (let i = 0; i < split.length; i++) {
 		output.push(split[split.length - i - 1]);
 	}
-	let a = "";
-	for (let i = 0; i < output.length; i++) {
+	let a = output[0];
+	for (let i = 1; i < output.length; i++) {
 		a = `${a} ${output[i]}`;
 	}
 	return a;

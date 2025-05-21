@@ -17,7 +17,11 @@ function inverserMots(txt) {
 	for (let i = 0; i < split.length; i++) {
 		output.push(split[split.length - i - 1]);
 	}
-	return output;
+	let a = "";
+	for (let i = 0; i < output.length; i++) {
+		a = `${a} ${output[i]}`;
+	}
+	return a;
 }
 
 console.log(inverserMots("Bonjour tout le monde")); // Résultat attendu : "monde le tout Bonjour"

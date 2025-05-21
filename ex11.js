@@ -13,7 +13,6 @@ function inverserMots(txt) {
 		word = word + txt[i];
 	}
 	split.push(word);
-	console.log(split);
 	for (let i = 0; i < split.length; i++) {
 		output.push(split[split.length - i - 1]);
 	}
